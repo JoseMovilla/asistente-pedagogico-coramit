@@ -35,7 +35,7 @@ if st.sidebar.button("🚀 GENERAR PLANEACIÓN COMPLETA"):
         try:
             # Configuración del modelo Gemini 3.1 Flash Preview (visto en tu imagen)
             genai.configure(api_key=api_key)
-            model = genai.GenerativeModel('gemini-1.5-flash-latest') # He puesto flash para asegurar compatibilidad, pero si prefieres el 3.1 cámbialo a 'gemini-3.1-flash-preview'
+            model = genai.GenerativeModel('gemini-1.5-flash')# He puesto flash para asegurar compatibilidad, pero si prefieres el 3.1 cámbialo a 'gemini-3.1-flash-preview'
             
             # PROMPT MAESTRO CON TODAS TUS REGLAS
             prompt = f"""
