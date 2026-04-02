@@ -21,7 +21,7 @@ if st.sidebar.button("🚀 GENERAR"):
             
             # 2. PROBAR CON EL MODELO MÁS BÁSICO POSIBLE
             # Si 'gemini-1.5-flash' falla, el sistema nos dirá por qué
-            model = genai.GenerativeModel('gemini-1.5-flash')
+            model = genai.GenerativeModel('models/gemini-1.5-flash')
             
             prompt = f"Genera una tabla de planeación pedagógica para la {semana} de {mes} sobre literatura infantil para niños de 1 a 4 años. Usa formato de tabla de 6 filas."
             
